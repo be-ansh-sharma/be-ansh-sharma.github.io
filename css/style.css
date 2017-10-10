@@ -1,0 +1,50 @@
+#jumbotron-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+h1.j-items,a.j-items {
+    margin: auto;
+    
+}
+
+a.ex-btn {
+    transition: all .3s ease-in-out;
+    border: 1px solid black;
+    width: 150px;
+    height: auto;
+    padding: auto;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    
+}
+
+a.ex-btn:hover {
+    width: 200px;
+    background-color: skyblue;
+    border: 1px solid skyblue;
+    
+}
+
+.navbar-default {
+    background: transparent;
+    background-image: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+#skill-container {
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+
