@@ -9,56 +9,49 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="./css/style.css" rel="stylesheet"/>
+       
     </head>
 
     <body>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="opennav">&#9776;</span>
+      
         <!-- *******************************Jumbotron here ************************************** -->
 
-        <div class="container-fluid" id="jumbotron-container">
-          <img src="./images/jumbotron.jpg" class="j-items"/>
-          <h1 class="j-items"> HELLO, </h1>
-          <h2 class="j-items"> I am Ansh Sharma.</h2>
-          <h3 class="j-items">I am a Full Stack Developer</h3> 
-          <a class="j-items ex-btn btn" href="#" >Open for Hire</a>
+        <div id="jumbotron-container">
+          <div class="jumbotron-items">  
+            <h1 class="j-items"> HELLO, </h1>
+            <h2 class="j-items"> I am Ansh Sharma.</h2>
+            <h3 class="j-items">I am a Full Stack Developer</h3> 
+            <a class="j-items ex-btn btn" href="#" >Open for Hire</a>
+          </div>
         </div>
 
-        <!--********************************  NAV BAR HERE ************************************** -->
+        <!-- ******************************navbar ********************************************* -->
 
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
-              </button>
-              <a class="navbar-brand" href="#">Ansh Sharma</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav" >
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Skill Set</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-      </nav>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" id="closenav">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
 
-        <!-- ******************************  SKill Set ******************************************** -->
+        <!-- ******************************  SKill Set ******************************************** 
 
         <div class="container-fluid row" id="skill-container">
           <h1>Skill Set </h1>
-          
-          <div class="skill-item col-xs-12 col-sm-6 col-md-4 col-lg-4" >
-            <img id="react" src="./images/react.png" width="150px" height="100px" />
+
+          <div class="skill-item col-xs-12 col-sm-6 col-md-4 col-lg-4" id="pos1">
+            <img id="react" src="./images/HTML5.png" width="150px" height="100px" />
+            <h4>HTML5</h4>
           </div>
 
-          <div class="skill-item col-xs-12 col-sm-6 col-md-4 col-lg-4" >
+          <div class="skill-item col-xs-12 col-sm-6 col-md-4 col-lg-4" id="pos2">
               <img id="react" src="./images/react.png" width="150px" height="100px" />
           </div>
 
-          <div class="skill-item col-xs-12 col-sm-6 col-md-4 col-lg-4" >
+          <div class="skill-item col-xs-12 col-sm-6 col-md-4 col-lg-4" id="pos3">
               <img id="react" src="./images/react.png" width="150px" height="100px" />
           </div>
 
@@ -70,9 +63,27 @@
           <h1>Projects</h1>
 
 
-          <div>
+          <div class="project-items">
             <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6">Image</span>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" class="pr-it-dt">
+              <p>Project Detail</p>
+              <a href="#" class="ex-btn btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Download</a>
+              <a href="#" class="ex-btn btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Visit on Github</a>
+            </div> 
+          </div>
+
+          <div class="project-items">
+            <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6">Image</span>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" class="pr-it-dt">
+              <p>Project Detail</p>
+              <a href="#" class="ex-btn btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Download</a>
+              <a href="#" class="ex-btn btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Visit on Github</a>
+            </div> 
+          </div>
+
+          <div class="project-items">
+            <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6">Image</span>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" class="pr-it-dt">
               <p>Project Detail</p>
               <a href="#" class="ex-btn btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Download</a>
               <a href="#" class="ex-btn btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Visit on Github</a>
@@ -98,6 +109,6 @@
         <div class="container-fluid" id="footer-container"> 
           Footer
         </div>
-
+        <script src="./js/script.js" type="text/javascript"></script>
     </body>
 </html>

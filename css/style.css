@@ -1,9 +1,24 @@
 #jumbotron-container {
     height: 100vh;
+    background-image: url(../images/hero-bg.png);
+    background-color: #252a30;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.jumbotron-items {
+    background-image: linear-gradient(90deg, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
+
 
 
 h1.j-items,a.j-items {
@@ -32,19 +47,86 @@ a.ex-btn:hover {
     
 }
 
-.navbar-default {
-    background: transparent;
-    background-image: none;
-    border-color: transparent;
-    box-shadow: none;
+.jumbotron-items a {
+    color: white;
+    border: 1px solid white;
 }
+
 
 #skill-container {
     height: 100px;
     margin: 0 auto;
     text-align: center;
 
+
 }
 
 
+/* NavBar */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right : 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#opennav {
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    right: 5px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 36px;
+    
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/*  Project 'list */
+#project-container {
+    background-color: white;
+    
+}
+
+#project-container h1 {
+    text-align: center;
+    
+}
+
+.project-items span , .project-items div {
+    height: 200PX;
+}
+
+.pr-it-dt a {
+    margin-left: 25px;
+}
 
