@@ -37,6 +37,7 @@ a.ex-btn {
     cursor: pointer;
     text-decoration: none;
     color: black;
+    margin-left: 70px;
     
 }
 
@@ -50,6 +51,7 @@ a.ex-btn:hover {
 .jumbotron-items a {
     color: white;
     border: 1px solid white;
+    margin:auto;
 }
 
 
@@ -126,7 +128,16 @@ a.ex-btn:hover {
     height: 200PX;
 }
 
-.pr-it-dt a {
-    margin-left: 25px;
+
+/* ***** FORM ****/
+
+a[type='submit'] {
+    margin-left: 0;
 }
+
+#form-container h2 {
+    text-align: center;
+}
+
+
 

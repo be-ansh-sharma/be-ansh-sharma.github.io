@@ -59,36 +59,38 @@
 
         <!-- ******************************  PROJECTS ********************************************* -->
 
-        <div class="container-fluid row" id="project-container" >
+        <div class="container row" id="project-container" >
           <h1>Projects</h1>
 
 
-          <div class="project-items">
-            <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6">Image</span>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" class="pr-it-dt">
-              <p>Project Detail</p>
+          <div class="project-items row">
+            <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><img src="./images/React.png" width="150px"  height="100px" /></span>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 row " class="pr-it-dt">
+              <p>Souce Code of the Portfolio Website designed by using <u>HTML</u> and CSS and Jquery. </p>
               <a href="#" class="ex-btn btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Download</a>
               <a href="#" class="ex-btn btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Visit on Github</a>
             </div> 
           </div>
 
-          <div class="project-items">
+          <div class="project-items row">
             <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6">Image</span>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" class="pr-it-dt">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 " class="pr-it-dt">
               <p>Project Detail</p>
               <a href="#" class="ex-btn btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Download</a>
-              <a href="#" class="ex-btn btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Visit on Github</a>
+              <a href="#" class="ex-btn btn col-xs-12 col-sm-12 col-md-6 col-lg-6 pull-right">Visit on Github</a>
             </div> 
           </div>
 
-          <div class="project-items">
+          <div class="project-items row">
             <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6">Image</span>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" class="pr-it-dt">
               <p>Project Detail</p>
               <a href="#" class="ex-btn btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Download</a>
-              <a href="#" class="ex-btn btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Visit on Github</a>
+              <a href="#" class="ex-btn btn col-xs-12 col-sm-12 col-md-6 col-lg-6 pull-right">Visit on Github</a>
             </div> 
           </div>
+
+          
 
           
         </div>
@@ -96,13 +98,42 @@
         <!-- ***************************** Contact me ********************************************* -->
 
         <div class="container-fluid" id="form-container">
-          <form>
-            <input type="text" placeholder="Name" required autocomplete="true"/>
-            <input type="email" placeholder="E-mail" required autocomplete="true" />
-            <textarea placeholder="Message"></textarea>
-            <input type="submit" value="Submit" id="submit" />
-          </form> 
+          <h2>Contact Me</h2>
+          <form class="form-horizontal">
+              <div class="form-group">
+                  <label class="control-label col-sm-1" for="name">Name</label>
+                  <div class="col-sm-11">          
+                    <input type="text" class="form-control" id="textbox" placeholder="Enter Name" name="name" required autocomplete="true">
+                  </div>
+                </div>
+                
+
+            <div class="form-group">
+              <label class="control-label col-sm-1" for="email">Email:</label>
+              <div class="col-sm-11">
+                <input type="email" class="form-control" id="emailbox" placeholder="Enter email" name="email" required autocomplete="true">
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label class="control-label col-sm-1" for="msg">Message:</label>
+              <div class="col-sm-11">          
+                <textarea placeholder="Enter Message" class="form-control" id="textareabox" name="msg"></textarea>
+              </div>
+            </div>
+
+
+            <div class="form-group">        
+              <div class="col-sm-offset-1 col-sm-11">
+                <a type="submit" class="btn ex-btn">Submit</a>
+                <a type="reset" class="btn  pull-right ex-btn" value="Reset">Reset</a>
+              </div>
+            </div>
+            
+          </form>
         </div>
+        
 
         <!--****************************** FOOTER ************************************************* -->
         
