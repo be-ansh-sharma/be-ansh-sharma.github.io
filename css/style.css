@@ -1,5 +1,6 @@
 html {
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 #jumbotron-container {
@@ -59,13 +60,6 @@ a.ex-btn:hover {
 }
 
 
-#skill-container {
-    height: 100px;
-    margin: 0 auto;
-    text-align: center;
-
-
-}
 
 
 /* NavBar */
@@ -114,6 +108,8 @@ a.ex-btn:hover {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+
+  
 }
 
 
@@ -159,8 +155,17 @@ a[type='submit']:hover {
 #skill-container {
     height: 400px;
     background-color: #252a30;
+    text-align: center;
     color: white;    
 }
+
+@media (max-width : 768px) {
+    #skill-container {
+        height: 500px;
+    }
+}
+
+
 
 i {
     font-size: 70px;
