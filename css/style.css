@@ -139,5 +139,25 @@ a[type='submit'] {
     text-align: center;
 }
 
+#form-container {
+    background-color: lightgray;
+}
+
+/* Skill Set */
+
+#skill-container {
+    height: 400px;
+}
+
+i {
+    font-size: 70px;
+    color: gray;
+}
+
+.skill-item {
+    margin-bottom: 25px;
+}
+
+
 
 

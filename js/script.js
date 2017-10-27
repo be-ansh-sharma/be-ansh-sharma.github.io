@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    let skillset = ['React' , 'HTML5', 'CSS', 'JAVASCRIPT'];
+    
     
     $('#opennav').on('click', function(event) {
         event.stopPropagation();        
@@ -17,6 +17,15 @@ $(document).ready(function () {
         document.getElementById("mySidenav").style.width = "0";
     });
 
+    $('i').mouseenter(function() {
+       // alert("hover");
+        $(this).addClass('colored');
+    });
+
+    $('i').mouseleave(function() {
+        // alert("hover");
+         $(this).removeClass('colored');
+     });
    
 
 });
