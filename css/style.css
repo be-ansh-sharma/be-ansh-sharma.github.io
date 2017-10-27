@@ -1,3 +1,7 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
 #jumbotron-container {
     height: 100vh;
     background-image: url(../images/hero-bg.png);
@@ -133,6 +137,11 @@ a.ex-btn:hover {
 
 a[type='submit'] {
     margin-left: 0;
+    transition: all 0.8ms ease-in-out;
+}
+
+a[type='submit']:hover {
+    background-color: #53a7ea;
 }
 
 #form-container h2 {
@@ -143,10 +152,14 @@ a[type='submit'] {
     background-color: lightgray;
 }
 
+
+
 /* Skill Set */
 
 #skill-container {
     height: 400px;
+    background-color: #252a30;
+    color: white;    
 }
 
 i {
@@ -157,6 +170,106 @@ i {
 .skill-item {
     margin-bottom: 25px;
 }
+
+
+/* Footer */
+
+#footer-container {
+    height:100px;
+    background-color: #252a30;
+    text-align: center;
+}
+
+
+#footer-container div p { 
+    color: white;
+    margin-top : 15px;
+}
+
+#footer-container div a {
+    margin-top: -5px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+#footer-container div a i:hover {
+    color: white;
+}
+
+a.dl-btn {
+    transition: all 0.8s ease-in-out;
+    border: 0.5px solid #53a7ea;
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    margin-left: 70px;
+    
+
+}
+
+a.dl-btn:before {
+    
+    font-family: FontAwesome;
+    content: '\f019';
+    position: absolute;
+    
+    left: -30px;
+    transition: all 200ms ease;
+    
+}
+
+a.dl-btn:hover:before {
+    left : 10px;
+    
+}
+
+a.dl-btn:hover {
+    background-color: #53a7ea;
+}
+
+
+
+a.git-btn {
+    transition: all 0.8s ease-in-out;
+    border: 0.5px solid #53a7ea;
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    margin-left: 70px;
+    
+
+}
+
+a.git-btn:before {
+    
+    font-family: FontAwesome;
+    content: '\f08e';
+    position: absolute;
+    
+    left: -30px;
+    transition: all 200ms ease;
+    
+}
+
+a.git-btn:hover:before {
+    left : 10px;
+    
+}
+
+a.git-btn:hover {
+    background-color: #53a7ea;
+}
+
 
 
 
