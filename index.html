@@ -20,15 +20,16 @@
         <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="opennav">&#9776;</span>
       
         <!-- *******************************Jumbotron here ************************************** -->
-
-        <div id="jumbotron-container">
-          <div class="jumbotron-items">  
-            <h1 class="j-items"> HELLO </h1>
-            <h2 class="j-items"> I am Ansh Sharma.</h2>
-            <h3 class="j-items">I am a Full Stack Developer</h3> 
-            <a class="j-items ex-btn btn" href="#" >Open for Hire</a>
+        <div class="container-fluid" id="jumbotron-container">
+          <div class="jumbotron-items">
+              <h1 class="j-items"> HELLO </h1>
+              <h2 class="j-items"> I am Ansh Sharma.</h2>
+              <h3 class="j-items">I am a Full Stack Developer</h3> 
+              <a class="j-items ex-btn btn" href="#" >Open for Hire</a>
           </div>
         </div>
+
+        
 
         <!-- ******************************navbar ********************************************* -->
 
@@ -72,7 +73,7 @@
           </div>   
 
           <div class="col-lg-4 col-md-4 skill-item col-sm-4 col-xs-6">
-            <i class="devicon-express-original-wordmark "></i>            
+            <i class="devicon-express-original "></i>            
           </div> 
           
           <div class="col-lg-4 col-md-4 skill-item col-sm-4 col-xs-6" >
@@ -80,89 +81,121 @@
           </div>
         </div>
 
+        <div id="path"></div>
+
         <!-- ******************************  PROJECTS ********************************************* -->
 
-        <div class="container row" id="project-container" >
-          <h1>Projects</h1>
-
-
-          <div class="project-items row">
-            <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></span>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 " class="pr-it-dt">
-              <p>Souce Code of the Portfolio Website designed by using <u>HTML</u> and CSS and Jquery. </p>
-              <a href="#" class=" btn dl-btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Download</a>
-              <a href="#" class=" btn git-btn  col-xs-12 col-sm-12 col-md-6 col-lg-6 pull-right">Visit on Github</a>
-            </div> 
+        <div class="container-fluid" id="project-container">
+          <div class="row pr-item">
+            <div class="pr-img-item col-xs-12 col-sm-6 col-md-6 col-lg-6"><img src="images/res-sample.png" /></div>
+            <div class="pr-dt-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <h3>Portfolio</h3>
+              <p>Portfolio Website for a Virtual Resume.</p>
+              <ul class="skillChip">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JQuery</li>
+              </ul>
+              <a href="#" class="btn dl-btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Download</a>
+              <a href="#" class="btn git-btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Github</a>
+            </div>
           </div>
 
-          <div class="project-items row">
-            <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6">Image</span>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 " class="pr-it-dt">
-              <p>Project Detail</p>
-              <a href="#" class=" btn dl-btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Download</a>
-              <a href="#" class=" btn git-btn col-xs-12 col-sm-12 col-md-6 col-lg-6 pull-right">Visit on Github</a>
-            </div> 
+
+          <div class="row pr-item">
+            <div class="pr-img-item col-xs-12 col-sm-6 col-md-6 col-lg-6"><img src="images/res-sample.png" /></div>
+            <div class="pr-dt-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <h3>TechJump</h3>
+              <p>A Content Aggregator/Recommender Product that can help user to search for related/useful technical feeds in one place.</p>
+              <ul class="skillChip">
+                <li >HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>NodeJS</li>
+                <li>MongoDB</li>
+              </ul>
+              <a href="#" class="btn dl-btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Download</a>
+              <a href="#" class="btn git-btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Github</a>
+            </div>
           </div>
 
-          <div class="project-items row">
-            <span class="col-xs-12 col-sm-12 col-md-6 col-lg-6">Image</span>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" class="pr-it-dt">
-              <p>Project Detail</p>
-              <a href="#" class=" btn dl-btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Download</a>
-              <a href="#" class=" btn  git-btn col-xs-12 col-sm-12 col-md-6 col-lg-6 pull-right">Visit on Github</a>
-            </div> 
+
+          <div class="row pr-item">
+            <div class="pr-img-item col-xs-12 col-sm-6 col-md-6 col-lg-6"><img src="images/res-sample.png" /></div>
+            <div class="pr-dt-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <h3>HideMyData</h3>
+              <p>Android App with a functionality to hide any user message inside any user selected image. User can also Share the encrypted image to any reciever which then can decrypt the secret message given he has the right encryption key.</p>
+              <ul class="skillChip">
+                <li>Cryptography</li>
+                <li>Steganograpgy</li>
+                <li>Android</li>
+                <li>Java</li>
+              </ul>
+              <a href="#" class="btn dl-btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Download</a>
+              <a href="#" class="btn git-btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Github</a>
+            </div>
           </div>
 
-          
+
+          <div class="row pr-item">
+            <div class="pr-img-item col-xs-12 col-sm-6 col-md-6 col-lg-6"><img src="images/res-sample.png" class="col-xs-12 col-sm-12 col-md-6 col-lg-6"/></div>
+            <div class="pr-dt-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <h3>To-Do App</h3>
+              <p>React App that can help with storing all the To-Do's in a list that is easily visible to the user.</p>
+              <ul class="skillChip">
+                <li>React</li>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <a href="#" class="btn dl-btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Download</a>
+              <a href="#" class="btn git-btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Github</a>
+            </div>
+          </div>
+
+
+          <div class="row pr-item">
+              <div class="pr-img-item col-xs-12 col-sm-6 col-md-6 col-lg-6"><img src="images/res-sample.png" /></div>
+              <div class="pr-dt-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h3>Chat Application</h3>
+                <p>Chat Application using pure NodeJS and it's popular modules.</p>
+                <ul class="skillChip">
+                  <li>NodeJS</li>
+                  <li>Socket.io</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <a href="#" class="btn dl-btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Download</a>
+                <a href="#" class="btn git-btn col-xs-12 col-sm-12 col-md-6 col-lg-6">Github</a>
+              </div>
+            </div>
+
 
           
         </div>
 
         <!-- ***************************** Contact me ********************************************* -->
 
-        <div class="container-fluid" id="form-container">
-          <h2>Contact Me</h2>
-          <form class="form-horizontal">
-              <div class="form-group">
-                  <label class="control-label col-sm-1" for="name">Name</label>
-                  <div class="col-sm-11">          
-                    <input type="text" class="form-control" id="textbox" placeholder="Enter Name" name="name" required autocomplete="true">
-                  </div>
-                </div>
-                
-
-            <div class="form-group">
-              <label class="control-label col-sm-1" for="email">Email:</label>
-              <div class="col-sm-11">
-                <input type="email" class="form-control" id="emailbox" placeholder="Enter email" name="email" required autocomplete="true">
-              </div>
-            </div>
-
-
-            <div class="form-group">
-              <label class="control-label col-sm-1" for="msg">Message:</label>
-              <div class="col-sm-11">          
-                <textarea placeholder="Enter Message" class="form-control" id="textareabox" name="msg"></textarea>
-              </div>
-            </div>
-
-
-            <div class="form-group">        
-              <div class="col-sm-offset-1 col-sm-11">
-                <a type="submit" class="btn btn-default  ">Submit</a>
-                <a type="reset" class="btn btn-danger pull-right " value="Reset">Reset</a>
-              </div>
-            </div>
-            
-          </form>
+        <div class="container-fluid" id="contact-container">
+          <div class="row">
+              <form action="" id="form-container">
+                <ul>
+                  <li><input type="text" placeholder="Name" name="nameBox" class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4 col-sm-8 col-sm-offset-2 col-xs-12"/></li>
+                  <li><input type="mail" placeholder="E-Mail" name="mailBox" autocomplete="true" required  class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4 col-sm-8 col-sm-offset-2 col-xs-12"/></li>
+                  <li><textarea name="textareaBox" placeholder="Message" class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4 col-sm-8 col-sm-offset-2 col-xs-12"></textarea></li>
+                  <li><input type="submit" id="submit" name="submitBox" value="Submit" class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4 col-sm-8 col-sm-offset-2 col-xs-12" /></li>
+                </ul>
+              </form>
+          </div>
         </div>
-        
 
         <!--****************************** FOOTER ************************************************* -->
         
         <div class="container-fluid" id="footer-container"> 
           <div class="row">
-              <p>Handmade by me&copy;2017</p><br/>
+              <p>Handmade by Ansh Sharma&copy;2017</p><br/>
               <a href="https://github.com/be-ansh-sharma"><i class="fa fa-github" aria-hidden="true"></i></a>
               <a href="https://www.linkedin.com/in/ansh-sharma-337b5831/" ><i class="fa fa-linkedin" aria-hidden="true"></i> </a>  
               <a href="https://www.facebook.com/be.ansh.sharma"><i class="fa fa-facebook" aria-hidden="true"></i></a>

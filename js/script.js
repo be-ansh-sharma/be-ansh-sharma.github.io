@@ -26,6 +26,20 @@ $(document).ready(function () {
         // alert("hover");
          $(this).removeClass('colored');
      });
+
+     var divHeight = $('#jumbotron-container').outerHeight() + $('#skill-container').outerHeight();
+
+    $(window).on('scroll',function(){
+        var scrollTop = $(window).scrollTop();
+        //console.log("div height is " + divHeight + " and scroll is " + scrollTop);
+        //console.log( $('#jumbotron-container').outerHeight() );
+        if(scrollTop > divHeight) {
+            $('#opennav').css('color' , 'black');
+        }
+        if(scrollTop < divHeight) {
+            $('#opennav').css('color' , 'white');
+        }
+    });
    
 
 });

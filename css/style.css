@@ -1,17 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
 html {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
 }
 
+.container-fluid {
+    margin: 0;
+}
+
 #jumbotron-container {
     height: 100vh;
-    background-image: url(../images/hero-bg.png);
+    width: 100%;
+    background-image: url(../images/hero-bg.png) ;
     background-color: #252a30;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     color: white;
     text-align: center;
+    padding: 0;
 }
 
 .jumbotron-items {
@@ -59,6 +67,13 @@ a.ex-btn:hover {
     margin:auto;
 }
 
+#path {
+    border-top: 45px solid #252a30;
+    border-left : 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    margin-top: -1px;
+}
+
 
 
 
@@ -82,6 +97,7 @@ a.ex-btn:hover {
     z-index: 1;
     top: 0px;
     right: 5px;
+    color: white;
 }
 
 .sidenav a {
@@ -113,40 +129,228 @@ a.ex-btn:hover {
 }
 
 
+
+
+
+
 /*  Project 'list */
-#project-container {
-    background-color: white;
+
+.pr-img-item img {
+    height: 260px;
+    width: 420px;
+    max-width: 100%;
+    max-height: 100%;
+} 
+
+.pr-item {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.skillChip li {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.15);
+    line-height: 32px;
+    display: inline;
+    border-radius: 4px;
+    font-size: 12px;
+    background: #f04;
+    padding: 4px 9px;
+    margin-left: 0px;
+    cursor: pointer;
     
 }
 
-#project-container h1 {
+.skillChip li:hover {
+    background: red;
+}
+
+.skillChip {
+    padding-left: 0px;
+}
+
+
+
+
+
+a.dl-btn {
+    transition: all 0.8s ease-in-out;
+    border: 0.5px solid #53a7ea;
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50px;
     text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    margin-left: 0px;
+    
+
+}
+
+a.dl-btn:before {
+    
+    font-family: FontAwesome;
+    content: '\f019';
+    position: absolute;
+    
+    left: -30px;
+    transition: all 200ms ease;
     
 }
 
-.project-items span , .project-items div {
-    height: 200PX;
+a.dl-btn:hover:before {
+    left : 20px;
+    
+}
+
+a.dl-btn:hover {
+    background-color: #53a7ea;  
 }
 
 
-/* ***** FORM ****/
 
-a[type='submit'] {
-    margin-left: 0;
-    transition: all 0.8ms ease-in-out;
+a.git-btn {
+    transition: all 0.8s ease-in-out;
+    border: 0.5px solid #53a7ea;
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    margin-left: 70px;
+    
+
 }
 
-a[type='submit']:hover {
+a.git-btn:before {
+    
+    font-family: FontAwesome;
+    content: '\f08e';
+    position: absolute;
+    
+    left: -30px;
+    transition: all 200ms ease;
+    
+}
+
+a.git-btn:hover:before {
+    left : 23px;
+    
+}
+
+a.git-btn:hover {
     background-color: #53a7ea;
 }
 
-#form-container h2 {
-    text-align: center;
+
+
+
+
+
+
+
+
+
+/* ***** FORM ****/
+#contact-container {
+    height: 400px;
+    background-color: #e2dedb;
 }
 
 #form-container {
-    background-color: lightgray;
+    padding-top: 40px;
 }
+
+#form-container ul li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+#form-container ul  {
+    text-align: center;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    padding: 5px 0px;
+    height: 35px;
+    border: solid 1px #b3aca7;
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+}
+
+
+textarea {
+    height: 130px;
+    max-height: 130px;
+    padding: 8px;
+    
+    background: transparent;
+    outline: none;
+    
+    color: #726659;
+    font-family: 'Lato', sans-serif;
+    
+    border: solid 1px #b3aca7;
+    
+    transition: all 0.3s ease-in-out;
+}
+  
+  textarea:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+}
+
+#submit {
+    font-family: 'Lato', sans-serif;
+    
+    color: #b3aca7;
+    
+    outline:none;
+    cursor: pointer;
+    
+    border: solid 1px #b3aca7;
+    border-top: none;
+  }
+  
+  #submit:hover {
+    color: #e2dedb;
+  }
+
+  input:hover::placeholder, textarea:hover::placeholder {
+    color: #e2dedb;
+    
+  }
+
+
+  input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: #cbc6c1;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: #aca49c;
+    
+  }
+  
+  input:focus::placeholder, textarea::focus:placeholder {
+    color: #bbb5af;
+  }
+
+  
+
 
 
 
@@ -154,14 +358,30 @@ a[type='submit']:hover {
 
 #skill-container {
     height: 400px;
+    width: 100%;
     background-color: #252a30;
     text-align: center;
     color: white;    
+    margin-right: 0px;
+}
+
+#skill-container h1 {
+    color: gray;
+    cursor: default;
+    margin: 10px auto;
+    width: 132px;
+    
+    
+}
+
+#skill-container h1:hover {
+    color: white;
 }
 
 @media (max-width : 768px) {
     #skill-container {
         height: 500px;
+        width: 100%;
     }
 }
 
@@ -201,79 +421,40 @@ i {
     color: white;
 }
 
-a.dl-btn {
-    transition: all 0.8s ease-in-out;
-    border: 0.5px solid #53a7ea;
-    width: 150px;
-    height: auto;
-    overflow: hidden;
-    border-radius: 50px;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-    margin-left: 70px;
-    
 
+/* Media Query */
+
+@media (max-width : 425px) {
+    form {
+        position: relative;
+        left: -20px;
+    }
+
+    a.dl-btn {
+        width: 100%;
+    }
+
+    a.git-btn {
+        width: 100%;
+        margin: 5px 0; 
+    }
+
+    ul {
+        width: 100%;
+    }
 }
 
-a.dl-btn:before {
-    
-    font-family: FontAwesome;
-    content: '\f019';
-    position: absolute;
-    
-    left: -30px;
-    transition: all 200ms ease;
-    
+@media (min-width:425px) and (max-width:768px) {
+    a.dl-btn {
+        width: 100%;
+    }
+
+    a.git-btn {
+        width: 100%;
+        margin: 5px 0; 
+    }
 }
 
-a.dl-btn:hover:before {
-    left : 10px;
-    
-}
-
-a.dl-btn:hover {
-    background-color: #53a7ea;
-}
-
-
-
-a.git-btn {
-    transition: all 0.8s ease-in-out;
-    border: 0.5px solid #53a7ea;
-    width: 150px;
-    height: auto;
-    overflow: hidden;
-    border-radius: 50px;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-    margin-left: 70px;
-    
-
-}
-
-a.git-btn:before {
-    
-    font-family: FontAwesome;
-    content: '\f08e';
-    position: absolute;
-    
-    left: -30px;
-    transition: all 200ms ease;
-    
-}
-
-a.git-btn:hover:before {
-    left : 10px;
-    
-}
-
-a.git-btn:hover {
-    background-color: #53a7ea;
-}
 
 
 
