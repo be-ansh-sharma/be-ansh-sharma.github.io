@@ -282,7 +282,7 @@ input {
     color: #726659;
     padding: 5px 0px;
     height: 35px;
-    border: solid 1px #b3aca7;
+    border: solid 2px #b3aca7;
     border-bottom: none;
     transition: all 0.3s ease-in-out;
 }
@@ -304,7 +304,7 @@ textarea {
     color: #726659;
     font-family: 'Lato', sans-serif;
     
-    border: solid 1px #b3aca7;
+    border: solid 2px #b3aca7;
     
     transition: all 0.3s ease-in-out;
 }
@@ -322,7 +322,7 @@ textarea {
     outline:none;
     cursor: pointer;
     
-    border: solid 1px #b3aca7;
+    border: solid 2px #b3aca7;
     border-top: none;
   }
   
@@ -452,6 +452,30 @@ i {
     a.git-btn {
         width: 100%;
         margin: 5px 0; 
+    }
+}
+
+
+/* animate try */
+
+.animated.pop-in {
+    animation: popIn 1s both;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    80% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
