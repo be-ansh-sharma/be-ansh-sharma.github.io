@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('.sidenav a[href^="#"]').on('click',function (e) {
+    $('.sidenav a[href^="#"] , .jumbotron-items a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 
 	    var target = this.hash;
